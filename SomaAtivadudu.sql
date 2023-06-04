@@ -6,8 +6,6 @@ ALTER TABLE usuarios ADD COLUMN telefone varchar(11);
 ALTER TABLE usuarios ADD COLUMN photo varchar(200);
 
 
-
-
 create table task(
 id bigint not null auto_increment,
 task_name varchar(100) not null,
@@ -79,17 +77,20 @@ INSERT INTO task_responsable (id_task, id_user) VALUES (5, 2);
 INSERT INTO task_responsable (id_task, id_user) VALUES (4, 1);
 INSERT INTO task_responsable (id_task, id_user) VALUES (2, 4);
 
-insert into status_photos (id_status,photo) values 
-(1,"www.photo1.com"),
-(4,"www.photo2.com"),
-(3,"www.photo4.com"),
-(2,"www.photo3.com");
 
 insert into estado(estado_atual,task_id,coment) values
 ("Aberta",1,"Muita coisa para fazer omg"),
 ("Concluida",3,"Muita coisa para fazer omg"),
 ("Em Andamento",2,"Muita coisa para fazer omg"),
 ("Encerrada",4,"Muita coisa para fazer omg");
+
+insert into status_photos (id_status,photo) values 
+(1,"www.photo1.com"),
+(4,"www.photo2.com"),
+(3,"www.photo4.com"),
+(2,"www.photo3.com");
+
+
 
 
 
