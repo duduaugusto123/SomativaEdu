@@ -6,6 +6,8 @@ ALTER TABLE usuarios ADD COLUMN telefone varchar(11);
 ALTER TABLE usuarios ADD COLUMN photo varchar(200);
 
 
+
+
 create table task(
 id bigint not null auto_increment,
 task_name varchar(100) not null,
@@ -47,6 +49,23 @@ photo text not null,
 foreign key (id_status) references estado(id),
 primary key(id)
 );
+
+update usuarios set telefone = 19847382910 where id =1;
+update usuarios set telefone = 19832582910 where id =2;
+update usuarios set telefone = 15796424910 where id =3;
+update usuarios set telefone = 15987654321 where id =4;
+update usuarios set telefone = 19842654321 where id =5;
+update usuarios set telefone = 19842698776 where id =6;
+
+update usuarios set photo="www.photo1.com.br" where id =1;
+update usuarios set photo="www.photo2.com.br" where id =2;
+update usuarios set photo="www.photo3.com.br" where id =3;
+update usuarios set photo="www.photo4.com.br" where id =4;
+update usuarios set photo="www.photo5.com.br" where id =5;
+update usuarios set photo="www.photo6.com.br" where id =6;
+
+
+
 
 insert into task(task_name,task_descrition,task_limite_date,task_finish_date,ambient_name,task_solicitante) values 
 ("Vidro Trincado","O Vidro trincou devido as vibrações","2022-06-03","2022-05-02",2,4),
